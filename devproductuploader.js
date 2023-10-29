@@ -52,7 +52,7 @@ async function addDeveloperProduct(cookie, universeId, name, priceInRobux, descr
         priceInRobux: priceInRobux
     };
 
-    console.log("Sending request data:", requestData); // Debug: log the request data
+    console.log("Sending request data:", requestData);
 
     const response = await httpRequest({
         hostname: 'apis.roblox.com',
