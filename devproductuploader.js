@@ -1,11 +1,7 @@
 const https = require('https');
 
 const devProducts = [
-    { name: "1", price: 8, description: "Normal" },
-    { name: "2", price: 25, description: "Upgraded" },
-    { name: "3", price: 45, description: "Shiny" },
-    { name: "4", price: 75, description: "Legendary" },
-    { name: "5", price: 115, description: "Reskin" },
+    { name: "Product1", price: 150, description: "This is your first product add more to the table if you'd like." },
 ];
 
 function httpRequest(options) {
