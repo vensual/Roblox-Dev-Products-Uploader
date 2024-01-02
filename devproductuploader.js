@@ -94,15 +94,15 @@ async function getCurrentUser(jar) {
 }
 
 async function main() {
-    const COOKIE = 'YOUR/COOKIE/HERE';
-    const UNIVERSE_ID = 'YOUR/UNIVERSEID/HERE';
+    const cookie = 'putyourcookiehere';
+    const uid = 'putyouruniverseidhere';
 
     try {
         const currentUser = await getCurrentUser(COOKIE);
         console.log("Logged in as:", currentUser.UserName);
 
         for (const product of devProducts) {
-            await addDeveloperProduct(COOKIE, UNIVERSE_ID, product.name, product.price, product.description);
+            await addDeveloperProduct(cookie, uid, product.name, product.price, product.description);
             await delay(1000);
         }
     } catch (error) {
